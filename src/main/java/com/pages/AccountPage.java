@@ -10,8 +10,9 @@ public final class AccountPage extends BasePage {
 	private final By linkLogout=By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//li//a[contains(text(),'Logout')]");	
 	private final By editAccountLink=By.xpath("//a[contains(text(),'Edit your account information')]");
 	
-	public By editYourAccountInformation() {
-		return editAccountLink;		
+	public AccountPage clickeditYourAccountInformation() {
+		click(editAccountLink, WaitStrategy.CLICKABLE, "Edit Account Informations");
+		return this;		
 	}
 	
 	public AccountPage clickDropDown() {

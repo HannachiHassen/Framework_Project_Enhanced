@@ -12,12 +12,12 @@ public class BaseTest {
 		
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	protected void setUp() throws Exception {
 		Driver.initDriver();
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	protected void tearDown() {		
 		Driver.quitDriver();
 	}
