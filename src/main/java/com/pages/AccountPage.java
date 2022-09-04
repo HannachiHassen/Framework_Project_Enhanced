@@ -6,8 +6,8 @@ import com.enums.WaitStrategy;
 
 public final class AccountPage extends BasePage {
 	
-	private final By linkDropDown=By.xpath("//p[@class='oxd-userdropdown-name']");
-	private final By linkLogout=By.xpath("//a[contains(text(),'Logout')]");	
+	private final By AccountDropDown=By.xpath("//span[contains(text(),'My Account')]");
+	private final By linkLogout=By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//li//a[contains(text(),'Logout')]");	
 	private final By editAccountLink=By.xpath("//a[contains(text(),'Edit your account information')]");
 	
 	public By editYourAccountInformation() {
@@ -15,7 +15,7 @@ public final class AccountPage extends BasePage {
 	}
 	
 	public AccountPage clickDropDown() {
-		click(linkDropDown, WaitStrategy.PRESENCE, "clickDropDown ");
+		click(AccountDropDown, WaitStrategy.PRESENCE, "clickDropDown ");
 		return this;
 	}
 	

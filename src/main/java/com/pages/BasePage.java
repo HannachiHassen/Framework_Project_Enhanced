@@ -9,7 +9,7 @@ import com.factories.ExplicitWaitFactory;
 
 public class BasePage {
 
-	protected String getPageTitle() {
+	public String getPageTitle() {
 		return DriverManager.getDriver().getTitle();
 	}
 	
