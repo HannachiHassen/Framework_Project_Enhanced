@@ -14,6 +14,7 @@ public final class FrameworkConstants {
 	private static final String CHROMEDRIVERPATH= RESOURCESPATH + "/executables/chromedriver.exe";
 	private static final String GECKODRIVERPATH= RESOURCESPATH + "/executables/geckodriver.exe";
 	private static final String CONFIGFILEPATH= RESOURCESPATH + "/config/config.properties";
+	private static final String JSONCONFIGFILEPATH= RESOURCESPATH + "/jsons/config.json";
 
 	public static int getExplicitwait() {
 		return EXPLICITWAIT;
@@ -29,6 +30,10 @@ public final class FrameworkConstants {
 
 	public static String getChromedriverpath() {
 		return CHROMEDRIVERPATH;
+	}
+	
+	public static String getJsonConfigFilePath() {
+		return JSONCONFIGFILEPATH;
 	}
 
 }
